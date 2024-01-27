@@ -10,7 +10,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:ext="clr-namespace:MyToDo.Extension"
         mc:Ignorable="d"
-        Title="MainWindow" Height="750" Width="1000" 
+        Title="MainWindow" Height="750" Width="1200" 
         WindowStyle="None"
         AllowsTransparency="True"
         WindowStartupLocation="CenterScreen">
@@ -96,8 +96,10 @@
                                 </StackPanel>
                             </DockPanel>
                         </materialDesign:ColorZone>
-                        <ContentControl prism:RegionManager.RegionName="{x:Static ext:PrismManager.MainViewRegionName}"/>
-                    </DockPanel>
+                        <materialDesign:ColorZone>
+                            <ContentControl prism:RegionManager.RegionName="{x:Static ext:PrismManager.MainViewRegionName}"/>
+                        </materialDesign:ColorZone>
+                </DockPanel>
                 </materialDesign:DrawerHost>
             </materialDesign:DialogHost>
 </Window>

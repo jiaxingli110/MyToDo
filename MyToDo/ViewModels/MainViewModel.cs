@@ -34,6 +34,7 @@ namespace MyToDo.ViewModels
                     journal.GoForward();
                 }
             });
+            //Navigate(MenuBars[0]);
         }
 
         private void Navigate(MenuBar bar)
