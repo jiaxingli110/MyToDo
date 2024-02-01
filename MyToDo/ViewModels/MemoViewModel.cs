@@ -1,4 +1,4 @@
-﻿using MyToDo.Comman;
+﻿using MyToDo.Common;
 using Prism.Commands;
 using Prism.Mvvm;
 using System;
@@ -15,7 +15,7 @@ namespace MyToDo.ViewModels
             CreateToDoList();
             AddCommand = new DelegateCommand(Add);
         }
-                private bool isRightDrawerOpen;
+        private bool isRightDrawerOpen;
 
         public bool IsRightDrawerOpen
         {
